@@ -24,11 +24,11 @@ ApplicationRecord.transaction do
     puts "Seeding cats data..."
     c1 = Cat.create!(name: 'Marco', birth_date: '2000-12-3', color: 'brown', sex: 'M')
     c2 = Cat.create!(name: 'Garfield', birth_date: '1999-12-29', color: 'orange', sex: 'M')
-    c3 = Cat.create!(name: 'Dave', birth_date: '2010-03-22', color: 'white', sex: 'F')
+    c3 = Cat.create!(name: 'Dave', birth_date: '2010-03-22', color: 'white', sex: 'F', description: 'Dave is an absolute gem.')
     c4 = Cat.create!(name: 'Milly', birth_date: '1000-04-6', color: 'brown', sex: 'M')
     c5 = Cat.create!(name: 'Phil', birth_date: '2005-12-21', color: 'mixed', sex: 'F')
-    c6 = Cat.create!(name: 'Tubby', birth_date: '2022-01-3', color: 'black', sex: 'M')
-    c7 = Cat.create!(name: 'Jamel', birth_date: '2019-05-10', color: 'white', sex: 'F')
+    c6 = Cat.create!(name: 'Tubby', birth_date: '2022-01-3', color: 'black', sex: 'M', description: 'Needs to go on a diet ASAP.')
+    c7 = Cat.create!(name: 'Jamel', birth_date: '2019-05-10', color: 'white', sex: 'F', description: 'Loves a movie night and popcorn.')
     
     puts "all done :)"
 
