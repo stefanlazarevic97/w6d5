@@ -11,7 +11,7 @@
     <td><%= @cat.color %></td>
     <td><%= @cat.sex %></td>
     <td><%= @cat.age %></td>
-    <td><%= @cat.description %></td>
+    <td><%= @cat.description.nil? ? "N/A" : @cat.description %></td>
   </tr>
 </table>
 

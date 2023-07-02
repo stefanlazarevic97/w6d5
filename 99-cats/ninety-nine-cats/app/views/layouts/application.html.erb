@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>NinetyNineCats</title>
+    <title>Ninety-nine Cats</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,9 +10,12 @@
   </head>
 
   <body>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE5CXOA4IPQuUwtmX3X-OWiAG583kNOa7CAg&usqp=CAU">
-    <h1>CatBook</h1>
-    <%= yield %>
+    <nav class="main-nav">
+      <h1><a href="<%= cats_url %>">CatBook</a></h1>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE5CXOA4IPQuUwtmX3X-OWiAG583kNOa7CAg&usqp=CAU">
+    <main>
+      <%= yield %>
+    </main>
   </body>
 
 </html>
